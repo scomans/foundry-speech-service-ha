@@ -1,6 +1,6 @@
-homeassistant==2026.11.0
-pytest-homeassistant==2026.11.0
-ruff>=0.17.3
+homeassistant==2026.11.3
+pytest-homeassistant==2026.11.3
+ruff>=0.17.6
 # Home Assistant core pins these; the tests load its tts and stt components
 mutagen==1.48.1
 ha-ffmpeg==3.2.2
