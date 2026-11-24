@@ -1,0 +1,24 @@
+{
+  "domain": "azure_speech",
+  "name": "Azure Speech",
+  "after_dependencies": [
+    "assist_pipeline"
+  ],
+  "categories": [
+    "ai_voice.speech"
+  ],
+  "codeowners": [
+    "@scomans"
+  ],
+  "config_flow": true,
+  "connectivity": [
+    "cloud"
+  ],
+  "dependencies": [],
+  "documentation": "https://github.com/scomans/foundry-speech-service-ha",
+  "integration_type": "service",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/scomans/foundry-speech-service-ha/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

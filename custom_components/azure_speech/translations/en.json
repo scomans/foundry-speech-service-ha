@@ -1,0 +1,68 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This Speech resource is already configured",
+      "reauth_successful": "Re-authentication was successful",
+      "reconfigure_successful": "Re-configuration was successful"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Check the region and your network.",
+      "invalid_auth": "Invalid key. Use Key 1 or Key 2 of your Speech resource.",
+      "invalid_region": "The Speech service was not found in this region.",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "user": {
+        "title": "Connect Azure Speech",
+        "description": "Create a Speech resource in the Azure portal, then copy a key and the region from its Keys and Endpoint page.",
+        "data": {
+          "api_key": "Speech key",
+          "region": "Region",
+          "name": "Name"
+        },
+        "data_description": {
+          "api_key": "Key 1 or Key 2 from Keys and Endpoint.",
+          "region": "Region of the resource, for example westeurope."
+        }
+      },
+      "reauth_confirm": {
+        "description": "The key for the Speech resource in region {region} was rejected. Enter a new key.",
+        "data": {
+          "api_key": "Speech key"
+        }
+      },
+      "reconfigure": {
+        "data": {
+          "api_key": "Speech key",
+          "region": "Region"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Phrase hints",
+        "description": "Phrase hints bias speech recognition toward your home's names. They are sent to Azure with each recording and use Azure's Fast Transcription API; if it fails, plain recognition without hints is used.",
+        "data": {
+          "phrase_hints": "Enable phrase hints",
+          "hint_sources": "Collect names from",
+          "custom_phrases": "Custom phrases"
+        },
+        "data_description": {
+          "custom_phrases": "One phrase per line, for words that are often misrecognised."
+        }
+      }
+    }
+  },
+  "selector": {
+    "hint_sources": {
+      "options": {
+        "floors": "Floors",
+        "areas": "Areas",
+        "devices": "Devices",
+        "exposed_entities": "Entities exposed to Assist"
+      }
+    }
+  }
+}

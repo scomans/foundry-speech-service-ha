@@ -1,0 +1,68 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Diese Speech-Ressource ist bereits eingerichtet",
+      "reauth_successful": "Die erneute Authentifizierung war erfolgreich",
+      "reconfigure_successful": "Die Neukonfiguration war erfolgreich"
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen. Prüfe die Region und dein Netzwerk.",
+      "invalid_auth": "Ungültiger Schlüssel. Verwende Key 1 oder Key 2 deiner Speech-Ressource.",
+      "invalid_region": "Der Speech-Dienst wurde in dieser Region nicht gefunden.",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "step": {
+      "user": {
+        "title": "Azure Speech verbinden",
+        "description": "Erstelle im Azure-Portal eine Speech-Ressource und kopiere einen Schlüssel und die Region von der Seite „Schlüssel und Endpunkt“.",
+        "data": {
+          "api_key": "Speech-Schlüssel",
+          "region": "Region",
+          "name": "Name"
+        },
+        "data_description": {
+          "api_key": "Key 1 oder Key 2 unter „Schlüssel und Endpunkt“.",
+          "region": "Region der Ressource, zum Beispiel westeurope."
+        }
+      },
+      "reauth_confirm": {
+        "description": "Der Schlüssel für die Speech-Ressource in der Region {region} wurde abgelehnt. Gib einen neuen Schlüssel ein.",
+        "data": {
+          "api_key": "Speech-Schlüssel"
+        }
+      },
+      "reconfigure": {
+        "data": {
+          "api_key": "Speech-Schlüssel",
+          "region": "Region"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Phrasen-Hinweise",
+        "description": "Phrasen-Hinweise lenken die Spracherkennung auf die Namen in deinem Zuhause. Sie werden mit jeder Aufnahme an Azure gesendet und nutzen die Fast-Transcription-API von Azure. Schlägt sie fehl, wird die normale Erkennung ohne Hinweise verwendet.",
+        "data": {
+          "phrase_hints": "Phrasen-Hinweise aktivieren",
+          "hint_sources": "Namen sammeln aus",
+          "custom_phrases": "Eigene Phrasen"
+        },
+        "data_description": {
+          "custom_phrases": "Eine Phrase pro Zeile, für Wörter, die oft falsch erkannt werden."
+        }
+      }
+    }
+  },
+  "selector": {
+    "hint_sources": {
+      "options": {
+        "floors": "Etagen",
+        "areas": "Bereiche",
+        "devices": "Geräte",
+        "exposed_entities": "Für Assist freigegebene Entitäten"
+      }
+    }
+  }
+}
